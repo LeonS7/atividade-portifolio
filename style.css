@@ -1,0 +1,575 @@
+/* =========================
+   INDEX
+========================= */
+
+/* =========================
+   RESET GERAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    background-image: url("img/tecnologia.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+/* =========================
+   OVERLAY ESCURO
+========================= */
+
+.overlay{
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(2, 6, 23, 0.75);
+}
+
+/* =========================
+   CONTEÚDO HERO
+========================= */
+
+.hero-conteudo{
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+.hero h1{
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+
+    color: white;
+
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.hero p{
+    font-size: 1.3rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+
+    color: #e2e8f0;
+}
+
+/* =========================
+   BOTÕES HERO
+========================= */
+
+.hero-botoes{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao,
+.botao-secundario,
+.botao-perfil{
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border: 2px solid #2563eb;
+
+    background-color: transparent;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+/* =========================
+   HOVER BOTÕES
+========================= */
+
+.botao:hover,
+.botao-secundario:hover,
+.botao-perfil:hover{
+    background-color: #2563eb;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre{
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.sobre h2{
+    font-size: 2.5rem;
+
+    margin-bottom: 30px;
+
+    color: #60a5fa;
+}
+
+.sobre p{
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   CARDS CONTEÚDO
+========================= */
+
+.cards-conteudo{
+    display: flex;
+
+    gap: 30px;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    max-width: 1400px;
+
+    margin: 50px auto 0 auto;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background-color: #1e293b;
+
+    width: 320px;
+
+    min-height: 220px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
+}
+
+.card h3{
+    margin-bottom: 15px;
+
+    color: #60a5fa;
+}
+
+.card p{
+    line-height: 1.6;
+}
+
+/* =========================
+   INFO EXTRA DOS CARDS
+========================= */
+
+.info-card{
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.5s ease,
+        opacity 0.5s ease;
+}
+
+.info-card img{
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+.info-card p{
+    margin-top: 15px;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   HOVER INFO CARD
+========================= */
+
+.card:hover .info-card{
+    max-height: 500px;
+
+    opacity: 1;
+}
+
+/* =========================
+   BOTÃO DISCIPLINAS
+========================= */
+
+.botao-disciplinas{
+    margin-top: 50px;
+}
+
+/* =========================
+   DISCIPLINAS PAGE
+========================= */
+
+.disciplinas-page{
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+.disciplinas-page h2{
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+
+    color: #60a5fa;
+}
+
+/* =========================
+   INTEGRANTES
+========================= */
+
+.integrantes{
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+/* =========================
+   CONTAINER INTEGRANTES
+========================= */
+
+.conteiner-integrantes{
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil{
+    background-color: #1e293b;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.perfil:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
+}
+
+.perfil img{
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+}
+
+.perfil h3{
+    margin-bottom: 10px;
+}
+
+.perfil p{
+    margin-bottom: 20px;
+}
+
+.perfil a{
+    display: inline-block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: #020617;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVIDADE INDEX
+========================= */
+
+@media (max-width: 768px){
+
+    .hero h1{
+        font-size: 2.8rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .hero-botoes{
+        flex-direction: column;
+    }
+
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+/* =========================
+   PORTFOLIO HERO
+========================= */
+
+.portfolio-hero{
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    overflow: hidden;
+
+    background-image: url("img/tecnologia.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.portfolio-hero img{
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #2563eb;
+
+    margin-bottom: 30px;
+
+    transition: 0.3s;
+}
+
+.portfolio-hero img:hover{
+    transform: scale(1.05);
+
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.5);
+}
+
+.portfolio-hero h1{
+    font-size: 3.5rem;
+
+    margin-bottom: 20px;
+}
+
+.portfolio-hero p{
+    max-width: 800px;
+
+    line-height: 1.7;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.sobre,
+.objetivos,
+.habilidades,
+.projetos,
+.meu-perfil,
+.frase,
+.contato{
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+/* =========================
+   TITULOS DAS SECTIONS
+========================= */
+
+.sobre h2,
+.objetivos h2,
+.habilidades h2,
+.projetos h2,
+.meu-perfil h2,
+.frase h2,
+.contato h2{
+    font-size: 2.5rem;
+
+    margin-bottom: 30px;
+
+    color: #60a5fa;
+}
+
+/* =========================
+   TEXTOS DAS SECTIONS
+========================= */
+
+.sobre p,
+.objetivos p,
+.meu-perfil p,
+.frase p,
+.contato p{
+    max-width: 900px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+    font-size: 1.1rem;
+}
+
+/* =========================
+   FRASE
+========================= */
+
+.frase{
+    background-color: #111827;
+}
+
+.frase p{
+    font-size: 1.5rem;
+
+    font-style: italic;
+
+    color: #93c5fd;
+}
+
+/* =========================
+   RESPONSIVIDADE PORTFOLIO
+========================= */
+
+@media(max-width: 768px){
+
+    .portfolio-hero h1{
+        font-size: 2.5rem;
+    }
+
+    .portfolio-hero p{
+        font-size: 1rem;
+    }
+
+    .cards-conteudo{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+}
