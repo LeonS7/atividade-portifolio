@@ -36,7 +36,7 @@ A proposta do projeto é funcionar como uma vitrine digital do curso, apresentan
 ---
 
 # 🖥️ Estrutura do Projeto
-
+```txt
 atividade-portifolio/
 │
 ├── index.html
@@ -50,7 +50,7 @@ atividade-portifolio/
 │   ├── programação.png
 │   ├── ia.png
 │   └── banco.png
-
+```
 ---
 
 🎯 Tecnologias Utilizadas
